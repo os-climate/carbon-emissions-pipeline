@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dashboard_carbon_monitoring
+    description: Energy consumption and carbon equivalent monitoring for OS-Climate Data Platform
+    
+    columns:
+      - name: pod_namespace
+        description: Namespace for the kubernetes pod
+        tests:
+          - not_null
+      - name: pod_name
+        description: Name of the kubernetes pod
+        tests:
+          - not_null
+      - name: month
+        description: Month for energy consumption observation
+        tests:
+          - not_null
+      - name: day
+        description: Day of the month for energy consumption observation
+        tests:
+          - not_null
+      - name: hour
+        description: Hour of the day for energy consumption observation
+        tests:
+          - not_null
+      - name: avg_pod_energy
+        description: Average energy consumption in joules
+        tests:
+          - not_null
+      - name: region
+        description: Electricity grid region
+        tests:
+          - not_null
+      - name: carbon_intensity
+        description: Carbon intensity value
+        tests:
+          - not_null
+      - name: unit_value
+        description: Measurement unit for carbon intensity
+        tests:
+          - not_null
+      - name: avg_pod_energy_kwh
+        description: Average energy consumption per kwh
+        tests:
+          - not_null
+      - name: gCO2eq
+        description: Emissions in gCO2 Equivalent 
+        tests:
+          - not_null
