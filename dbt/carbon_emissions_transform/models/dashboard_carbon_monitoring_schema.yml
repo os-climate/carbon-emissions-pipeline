@@ -3,7 +3,7 @@ version: 2
 models:
   - name: dashboard_carbon_monitoring
     description: Energy consumption and carbon equivalent monitoring for OS-Climate Data Platform
-    
+
     columns:
       - name: pod_namespace
         description: Namespace for the kubernetes pod
@@ -46,6 +46,6 @@ models:
         tests:
           - not_null
       - name: gCO2eq
-        description: Emissions in gCO2 Equivalent 
+        description: Emissions in gCO2 Equivalent
         tests:
           - not_null
