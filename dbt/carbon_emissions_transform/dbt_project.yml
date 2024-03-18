@@ -35,4 +35,3 @@ models:
   carbon_emissions_transform:
     materialized: view
     +view_security: invoker
-
