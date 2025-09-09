@@ -7,7 +7,6 @@ For a detailed guide on how to adjust your notebooks etc, please consult [docume
 1. Replace all `<VARIABLE>` mentions with your project name, respective url or any fitting value
 2. Define your automation run structure in the `templates` section of [`cron-workflow.yaml`](./cron-workflow.yml)
 3. Set up `sops`:
-
    1. Install `go` from your distribution repository
    2. Setup `GOPATH`
 
